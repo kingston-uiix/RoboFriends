@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+
+import './index.css';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div style = {{textAlign:'center'}} >
+      <h1 style={{fontFamily:'Roshi', fontSize:'4em', 
+      background: '-webkit-linear-gradient(#ff4800, #1c9abe)',webkitBackgroundClip:'text',
+      webkitTextFillColor: 'transparent'}}>Robo Friends</h1>
+      
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
